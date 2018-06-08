@@ -1,16 +1,16 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "lusty-nginx"
-version = "0.1-1"
+version = "0.2-0"
 -- LuaDist source
 source = {
-  tag = "0.1-1",
+  tag = "0.2-0",
   url = "git://github.com/LuaDist-testing/lusty-nginx.git"
 }
 -- Original source
 -- source = {
---   url = "https://github.com/Olivine-Labs/lusty-nginx/archive/v0.1.tar.gz",
---   dir = "lusty-nginx-0.1"
+--   url = "https://github.com/Olivine-Labs/lusty-nginx/archive/v0.2.tar.gz",
+--   dir = "lusty-nginx-0.2"
 -- }
 description = {
   summary = "Nginx plugin for lusty.",
@@ -26,7 +26,9 @@ dependencies = {
 build = {
   type = "builtin",
    modules = {
-    ["lusty-nginx.server"] = "src/server.lua",
+    ["lusty-nginx.init"] = "src/init.lua",
+    ["lusty-nginx.request"] = "src/request.lua",
+    ["lusty-nginx.response"] = "src/response.lua",
     ["lusty-nginx.log"] = "src/log.lua"
   }
 }
