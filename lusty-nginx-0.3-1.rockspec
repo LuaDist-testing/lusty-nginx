@@ -1,9 +1,17 @@
+-- This file was automatically generated for the LuaDist project.
+
 package = "lusty-nginx"
 version = "0.3-1"
+-- LuaDist source
 source = {
-  url = "https://github.com/Olivine-Labs/lusty-nginx/archive/v0.3.tar.gz",
-  dir = "lusty-nginx-0.3"
+  tag = "0.3-1",
+  url = "git://github.com/LuaDist-testing/lusty-nginx.git"
 }
+-- Original source
+-- source = {
+--   url = "https://github.com/Olivine-Labs/lusty-nginx/archive/v0.3.tar.gz",
+--   dir = "lusty-nginx-0.3"
+-- }
 description = {
   summary = "Nginx plugin for lusty.",
   detailed = [[
